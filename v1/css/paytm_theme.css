@@ -1,0 +1,603 @@
+/* Paytm Brand Psychology, Trust Badges, and Mobile Optimizations */
+
+.paytm-brand-bar {
+  background: linear-gradient(135deg, #002970 0%, #001e54 100%);
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paytm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 186, 242, 0.12);
+  color: #00BAF2;
+  padding: 4px 10px;
+  border-radius: var(--border-radius-full);
+  font-weight: 600;
+  font-size: 0.78rem;
+  border: 1px solid rgba(0, 186, 242, 0.25);
+}
+
+.paytm-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #22c55e;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Paytm Gradient Header Card - Optimized for Mobile */
+.paytm-gradient-card {
+  background: linear-gradient(135deg, #002970 0%, #0042a5 55%, #00BAF2 100%);
+  color: #ffffff;
+  border-radius: 24px !important;
+  padding: 24px 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -4px rgba(0, 41, 112, 0.3);
+}
+
+.paytm-gradient-card::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -15%;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.paytm-card-balance {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 4px 0 10px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.paytm-ticker {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  padding: 4px 12px;
+  border-radius: var(--border-radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.paytm-ticker .dot {
+  width: 7px;
+  height: 7px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #22c55e;
+  animation: pulse-green 1.8s infinite;
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+/* Trust Banner Graphic Box */
+.trust-banner-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 24px !important;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .trust-banner-card {
+  background: linear-gradient(135deg, #131d31 0%, #0b1120 100%);
+  border-color: #1e293b;
+}
+
+.trust-shield-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #002970 0%, #00BAF2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 186, 242, 0.25);
+}
+
+.trust-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #002970;
+  background: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+[data-theme="dark"] .trust-chip {
+  background: #1e293b;
+  color: #38bdf8;
+  border-color: #334155;
+}
+
+/* Quick Action Grid - Clean 4x2 on Mobile */
+.paytm-action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px 8px;
+  margin: 12px 0 6px 0;
+}
+
+.paytm-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--border-radius-sm);
+  transition: transform var(--transition-fast);
+  color: var(--text-primary);
+  text-decoration: none;
+  min-width: 0;
+}
+
+.paytm-action-btn:active {
+  transform: scale(0.94);
+}
+
+.paytm-action-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  background: var(--bg-main, #f8fafc);
+  border: 1px solid var(--border-color, #e2e8f0);
+  color: var(--primary, #002970);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+}
+
+.paytm-action-btn:hover .paytm-action-icon {
+  background: rgba(0, 186, 242, 0.1);
+  border-color: rgba(0, 186, 242, 0.4);
+  color: #00BAF2;
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 6px 16px rgba(0, 186, 242, 0.18);
+}
+
+.paytm-action-btn:active .paytm-action-icon {
+  transform: scale(0.94);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Unified Cohesive Brand Classes (Graceful fallback) */
+.icon-deposit,
+.icon-withdraw,
+.icon-balance,
+.icon-reward,
+.icon-usdt,
+.icon-history,
+.icon-security,
+.icon-help {
+  background: var(--bg-main, #f8fafc);
+  border: 1px solid var(--border-color, #e2e8f0);
+  color: var(--primary, #002970);
+}
+
+[data-theme="dark"] .paytm-action-icon,
+[data-theme="dark"] .icon-deposit,
+[data-theme="dark"] .icon-withdraw,
+[data-theme="dark"] .icon-balance,
+[data-theme="dark"] .icon-reward,
+[data-theme="dark"] .icon-usdt,
+[data-theme="dark"] .icon-history,
+[data-theme="dark"] .icon-security,
+[data-theme="dark"] .icon-help {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #38bdf8 !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .paytm-action-btn:hover .paytm-action-icon {
+  background: rgba(0, 186, 242, 0.18) !important;
+  border-color: #00BAF2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(0, 186, 242, 0.3) !important;
+}
+
+.paytm-action-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-primary);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* UPI Trust Badge */
+.upi-badge-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.upi-logo-text {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #002970;
+  border-bottom: 2px solid #00BAF2;
+}
+
+/* Mobile specific styling adjustments */
+@media (max-width: 768px) {
+  .paytm-gradient-card {
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .paytm-card-balance {
+    font-size: 1.95rem;
+  }
+
+  .paytm-action-grid {
+    gap: 12px 6px;
+  }
+
+  .paytm-action-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .trust-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+}
+
+/* ==========================================================================
+   Desktop Responsive Dashboard Grid & Wide Screen Optimization
+   Prevents single-column stretch on large screens (1080p, 2K, 4K)
+   ========================================================================== */
+
+.home-page-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Balanced 2-Column Responsive Dashboard Layout - Zero Empty Voids
+   Eliminates row-height locking, ensuring natural height-matched flow
+   ========================================================================== */
+.home-dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.home-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .home-col {
+    display: contents;
+  }
+
+  /* Transactions section moves to the very bottom on mobile screens */
+  .home-widget-transactions {
+    order: 999 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-dashboard-layout {
+    display: grid;
+    grid-template-columns: 1.18fr 1fr;
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+  }
+
+  .home-widget-transactions {
+    order: unset;
+  }
+}
+
+.home-widget-wrap,
+.home-grid-item {
+  width: 100%;
+  min-width: 0;
+}
+
+.home-widget-wrap > .card,
+.home-widget-wrap > .paytm-gradient-card,
+.home-widget-wrap > .trust-banner-card,
+.home-grid-item > .card,
+.home-grid-item > .paytm-gradient-card,
+.home-grid-item > .trust-banner-card {
+  margin-bottom: 0 !important;
+  border-radius: 24px !important;
+}
+
+/* Guardrails for Interactive Buttons on Wide Screens */
+.paytm-hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.paytm-hero-actions .btn {
+  flex: 1;
+  max-width: 220px;
+}
+
+@media (max-width: 576px) {
+  .paytm-hero-actions .btn {
+    max-width: 100%;
+  }
+}
+
+.referral-share-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.referral-share-btns .btn {
+  flex: 1;
+  max-width: 180px;
+}
+
+@media (max-width: 576px) {
+  .referral-share-btns .btn {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Universal 24px Border Radius Enforcer
+   Ensures all primary widgets, components, cards, and modal dialogs use 24px
+   ========================================================================== */
+.card,
+.paytm-gradient-card,
+.trust-banner-card,
+.home-widget-wrap > .card,
+.home-widget-wrap > .paytm-gradient-card,
+.home-widget-wrap > .trust-banner-card,
+.home-grid-item > .card,
+.home-grid-item > .paytm-gradient-card,
+.home-grid-item > .trust-banner-card,
+.search-modal-card,
+.avatar-modal-dialog {
+  border-radius: 24px !important;
+}
+
+/* ==========================================================================
+   Taskori Online Reference - Dark Mode Theme & Sizing System
+   Matches media_1789838248620.png (Matte Obsidian Charcoal & Crisp Monochromes)
+   ========================================================================== */
+
+[data-theme="dark"] body {
+  background-color: #131316 !important;
+  color: #fdfdfd !important;
+}
+
+[data-theme="dark"] .app-navbar {
+  background-color: #161619 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .app-sidebar {
+  background-color: #161619 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Card & Widget Backgrounds */
+[data-theme="dark"] .card {
+  background-color: #1c1c20 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .card-title {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+/* Core Wallet Card */
+[data-theme="dark"] .paytm-gradient-card {
+  background: linear-gradient(145deg, #222228 0%, #19191d 60%, #141417 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .paytm-gradient-card::after {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%) !important;
+}
+
+/* Quick Banking Services - Shortcut Folder Aesthetic */
+[data-theme="dark"] .paytm-action-btn {
+  color: #d4d4d8 !important;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.15s ease;
+}
+
+[data-theme="dark"] .paytm-action-btn:hover {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .paytm-action-icon {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 14px !important;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+[data-theme="dark"] .paytm-action-btn:hover .paytm-action-icon {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-3px) scale(1.06) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .paytm-action-label {
+  color: #a1a1aa !important;
+  font-size: 0.74rem !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="dark"] .paytm-action-btn:hover .paytm-action-label {
+  color: #ffffff !important;
+}
+
+/* Calculator & Mini Stat Cards */
+[data-theme="dark"] .stat-card {
+  background: #222227 !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+[data-theme="dark"] .stat-card-value {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .stat-card-label {
+  color: #a1a1aa !important;
+}
+
+/* VIP Reward Tier Packages */
+[data-theme="dark"] .home-grid-vip .card {
+  background: #222227 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Referral Box & Form Controls */
+[data-theme="dark"] .home-grid-referral div[style*="background: var(--bg-main)"],
+[data-theme="dark"] .form-control {
+  background: #17171a !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .form-control:focus {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Buttons in Dark Mode (Vibrant Apple iOS Capsule Style) */
+[data-theme="dark"] .btn {
+  border-radius: 9999px !important;
+}
+
+[data-theme="dark"] .btn-primary {
+  background: linear-gradient(180deg, #0A84FF 0%, #0071E3 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border: none !important;
+  box-shadow: 0 8px 26px rgba(10, 132, 255, 0.45), 0 2px 6px rgba(10, 132, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+
+[data-theme="dark"] .btn-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #2490ff 0%, #0077ee 100%) !important;
+  box-shadow: 0 12px 30px rgba(10, 132, 255, 0.55), 0 3px 8px rgba(10, 132, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  transform: translateY(-1.5px);
+}
+
+[data-theme="dark"] .btn-outline {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.16) !important;
+  color: #f4f4f5 !important;
+  border-radius: 9999px !important;
+}
+
+[data-theme="dark"] .btn-outline:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #0A84FF !important;
+  color: #38bdf8 !important;
+  transform: translateY(-1px);
+}
+
+/* Trust Shield Banner */
+[data-theme="dark"] .trust-banner-card {
+  background: #1c1c20 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .trust-chip {
+  background: #24242a !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #d4d4d8 !important;
+}
+
+/* Recent Transactions */
+[data-theme="dark"] .transaction-row {
+  background: #222227 !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-radius: 18px !important;
+  padding: 14px 18px !important;
+}
+
+[data-theme="dark"] .transaction-row:hover {
+  background: #282830 !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-theme="dark"] .tx-title {
+  color: #ffffff !important;
+}
+

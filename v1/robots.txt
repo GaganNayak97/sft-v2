@@ -1,0 +1,10 @@
+﻿User-agent: *
+Allow: /
+Disallow: /apis/
+Disallow: /webhooks/
+Disallow: /crons/
+Disallow: /core/
+Disallow: /database/
+
+# Googlebot Sitemap Reference
+Sitemap: http://127.0.0.1:8085/sitemap.xml
